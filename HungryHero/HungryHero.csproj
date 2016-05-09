@@ -1,0 +1,765 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E57CC0F8-9DE3-4EEB-BA3E-4E9E809FBC72}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HungryHero</RootNamespace>
+    <AssemblyName>HungryHero</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cocosstudio\HelloWorld.png" />
+    <Content Include="frameworks\cocos2d-html5\AUTHORS.txt" />
+    <Content Include="frameworks\cocos2d-html5\Base64Images.js" />
+    <Content Include="frameworks\cocos2d-html5\CCBoot.js" />
+    <Content Include="frameworks\cocos2d-html5\CCDebugger.js" />
+    <Content Include="frameworks\cocos2d-html5\CHANGELOG.txt" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\actions3d\CCActionGrid.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\actions3d\CCActionGrid3D.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\actions3d\CCActionPageTurn3D.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\actions3d\CCActionTiledGrid.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\actions\CCAction.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\actions\CCActionCamera.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\actions\CCActionCatmullRom.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\actions\CCActionEase.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\actions\CCActionInstant.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\actions\CCActionInterval.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\actions\CCActionTween.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\audio\CCAudio.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\clipping-nodes\CCClippingNode.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\clipping-nodes\CCClippingNodeCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\clipping-nodes\CCClippingNodeWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\compression\base64.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\compression\gzip.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\compression\ZipUtils.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\compression\zlib.min.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\base-nodes\BaseNodesPropertyDefine.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\base-nodes\CCAtlasNode.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\base-nodes\CCAtlasNodeCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\base-nodes\CCAtlasNodeWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\base-nodes\CCNode.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\base-nodes\CCNodeCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\base-nodes\CCNodeWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\CCActionManager.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\CCCamera.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\CCConfiguration.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\CCDirector.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\CCDirectorCanvas.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\CCDirectorWebGL.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\CCDrawingPrimitivesCanvas.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\CCDrawingPrimitivesWebGL.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\CCScheduler.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\cocoa\CCAffineTransform.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\cocoa\CCGeometry.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\cocos2d_externs.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\event-manager\CCEvent.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\event-manager\CCEventExtension.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\event-manager\CCEventHelper.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\event-manager\CCEventListener.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\event-manager\CCEventManager.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\event-manager\CCTouch.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\labelttf\CCLabelTTF.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\labelttf\CCLabelTTFCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\labelttf\CCLabelTTFWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\labelttf\LabelTTFPropertyDefine.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\layers\CCLayer.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\layers\CCLayerCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\layers\CCLayerWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\platform\CCClass.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\platform\CCCommon.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\platform\CCConfig.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\platform\CCEGLView.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\platform\CCInputExtension.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\platform\CCInputManager.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\platform\CCLoaders.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\platform\CCMacro.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\platform\CCSAXParser.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\platform\CCScreen.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\platform\CCTypes.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\platform\CCTypesPropertyDefine.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\platform\CCTypesWebGL.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\platform\CCVisibleRect.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\platform\miniFramework.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\renderer\RendererCanvas.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\renderer\RendererWebGL.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\scenes\CCLoaderScene.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\scenes\CCScene.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\sprites\CCAnimation.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\sprites\CCAnimationCache.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\sprites\CCBakeSprite.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\sprites\CCSprite.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\sprites\CCSpriteBatchNode.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\sprites\CCSpriteBatchNodeCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\sprites\CCSpriteBatchNodeWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\sprites\CCSpriteCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\sprites\CCSpriteFrame.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\sprites\CCSpriteFrameCache.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\sprites\CCSpriteWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\sprites\SpritesPropertyDefine.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\support\CCPointExtension.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\support\CCVertex.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\support\TransformUtils.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\textures\CCTexture2D.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\textures\CCTextureAtlas.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\textures\CCTextureCache.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\textures\TexturesPropertyDefine.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\textures\TexturesWebGL.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\utils\BinaryLoader.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\core\utils\CCProfiler.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\effects\CCGrabber.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\effects\CCGrid.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\aabb.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\gl\mat4stack.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\gl\matrix.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\mat3.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\mat4.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\mat4SIMD.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\plane.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\quaternion.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\ray2.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\SIMDPolyfill.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\simd_benchmark\base.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\simd_benchmark\index.html" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\simd_benchmark\kernel-template.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\simd_benchmark\kmMat4AreEqual.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\simd_benchmark\kmMat4Assign.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\simd_benchmark\kmMat4Inverse.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\simd_benchmark\kmMat4IsIdentity.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\simd_benchmark\kmMat4LookAt.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\simd_benchmark\kmMat4Multiply.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\simd_benchmark\kmMat4Transpose.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\simd_benchmark\kmVec3TransformCoord.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\simd_benchmark\run.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\simd_benchmark\run_browser.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\utility.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\vec2.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\vec3.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\vec3SIMD.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\kazmath\vec4.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\labels\CCLabelAtlas.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\labels\CCLabelAtlasCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\labels\CCLabelAtlasWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\labels\CCLabelBMFont.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\labels\CCLabelBMFontCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\labels\CCLabelBMFontWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\menus\CCMenu.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\menus\CCMenuItem.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\motion-streak\CCMotionStreak.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\motion-streak\CCMotionStreakWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\node-grid\CCNodeGrid.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\node-grid\CCNodeGridWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\parallax\CCParallaxNode.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\parallax\CCParallaxNodeRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\particle\CCParticleBatchNode.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\particle\CCParticleBatchNodeCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\particle\CCParticleBatchNodeWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\particle\CCParticleExamples.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\particle\CCParticleSystem.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\particle\CCParticleSystemCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\particle\CCParticleSystemWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\particle\CCPNGReader.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\particle\CCTIFFReader.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\physics\CCPhysicsDebugNode.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\physics\CCPhysicsDebugNodeCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\physics\CCPhysicsDebugNodeWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\physics\CCPhysicsSprite.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\physics\CCPhysicsSpriteCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\physics\CCPhysicsSpriteWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\progress-timer\CCActionProgressTimer.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\progress-timer\CCProgressTimer.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\progress-timer\CCProgressTimerCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\progress-timer\CCProgressTimerWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\render-texture\CCRenderTexture.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\render-texture\CCRenderTextureCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\render-texture\CCRenderTextureWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\shaders\CCGLProgram.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\shaders\CCGLStateCache.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\shaders\CCShaderCache.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\shaders\CCShaders.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\shape-nodes\CCDrawNode.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\shape-nodes\CCDrawNodeCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\shape-nodes\CCDrawNodeWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\text-input\CCIMEDispatcher.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\text-input\CCTextFieldTTF.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\tilemap\CCTGAlib.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\tilemap\CCTMXLayer.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\tilemap\CCTMXLayerCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\tilemap\CCTMXLayerWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\tilemap\CCTMXObjectGroup.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\tilemap\CCTMXTiledMap.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\tilemap\CCTMXXMLParser.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\transitions\CCTransition.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\transitions\CCTransitionPageTurn.js" />
+    <Content Include="frameworks\cocos2d-html5\cocos2d\transitions\CCTransitionProgress.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccb-reader\CCBAnimationManager.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccb-reader\CCBKeyframe.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccb-reader\CCBReader.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccb-reader\CCBReaderUtil.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccb-reader\CCBRelativePositioning.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccb-reader\CCBSequence.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccb-reader\CCBValue.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccb-reader\CCControlLoader.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccb-reader\CCNodeLoader.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccb-reader\CCNodeLoaderLibrary.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccb-reader\CCSpriteLoader.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccpool\CCPool.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\base-classes\CCProtectedNode.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\base-classes\CCProtectedNodeCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\base-classes\CCProtectedNodeWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\base-classes\UIScale9Sprite.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\base-classes\UIScale9SpriteCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\base-classes\UIScale9SpriteWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\base-classes\UIWidget.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\base-classes\UIWidgetRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\layouts\UIHBox.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\layouts\UILayout.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\layouts\UILayoutCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\layouts\UILayoutComponent.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\layouts\UILayoutManager.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\layouts\UILayoutParameter.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\layouts\UILayoutWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\layouts\UIRelativeBox.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\layouts\UIVBox.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\system\CocosGUI.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\system\UIHelper.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\uiwidgets\scroll-widget\UIListView.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\uiwidgets\scroll-widget\UIPageView.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\uiwidgets\scroll-widget\UIScrollView.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\uiwidgets\scroll-widget\UIScrollViewCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\uiwidgets\scroll-widget\UIScrollViewWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\uiwidgets\UIButton.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\uiwidgets\UICheckBox.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\uiwidgets\UIImageView.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\uiwidgets\UILoadingBar.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\uiwidgets\UIRichText.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\uiwidgets\UISlider.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\uiwidgets\UIText.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\uiwidgets\UITextAtlas.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\uiwidgets\UITextBMFont.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\uiwidgets\UITextField.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\uiwidgets\UIVideoPlayer.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\ccui\uiwidgets\UIWebView.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\action\CCActionFrame.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\action\CCActionManager.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\action\CCActionNode.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\action\CCActionObject.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\animation\CCArmatureAnimation.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\animation\CCProcessBase.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\animation\CCTween.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\CCArmature.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\CCArmatureCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\CCArmatureWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\CCBone.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\datas\CCDatas.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\display\CCBatchNode.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\display\CCDecorativeDisplay.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\display\CCDisplayFactory.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\display\CCDisplayManager.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\display\CCSkin.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\display\CCSkinCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\display\CCSkinWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\physics\CCColliderDetector.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\utils\CCArmatureDataManager.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\utils\CCArmatureDefine.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\utils\CCDataReaderHelper.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\utils\CCSpriteFrameCacheHelper.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\utils\CCTransformHelp.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\utils\CCTweenFunction.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\armature\utils\CCUtilMath.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\CocoStudio.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\components\CCComAttribute.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\components\CCComAudio.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\components\CCComController.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\components\CCComponent.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\components\CCComponentContainer.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\components\CCComRender.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\loader\load.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\loader\parsers\action-1.x.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\loader\parsers\action-2.x.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\loader\parsers\compatible.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\loader\parsers\scene-1.x.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\loader\parsers\timelineParser-1.x.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\loader\parsers\timelineParser-2.x.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\loader\parsers\uiParser-1.x.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\timeline\ActionTimeline.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\timeline\CCBoneNode.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\timeline\CCSkeletonNode.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\timeline\CCSkinNode.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\timeline\Frame.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\timeline\Timeline.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\trigger\ObjectFactory.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\trigger\TriggerBase.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\trigger\TriggerMng.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\cocostudio\trigger\TriggerObj.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\editbox\CCdomNode.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\editbox\CCEditBox.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\gui\control-extension\CCControl.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\gui\control-extension\CCControlButton.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\gui\control-extension\CCControlColourPicker.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\gui\control-extension\CCControlHuePicker.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\gui\control-extension\CCControlPotentiometer.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\gui\control-extension\CCControlSaturationBrightnessPicker.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\gui\control-extension\CCControlSlider.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\gui\control-extension\CCControlStepper.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\gui\control-extension\CCControlSwitch.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\gui\control-extension\CCControlUtils.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\gui\control-extension\CCInvocation.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\gui\control-extension\CCMenuPassive.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\gui\scrollview\CCScrollView.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\gui\scrollview\CCScrollViewCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\gui\scrollview\CCScrollViewWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\gui\scrollview\CCSorting.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\gui\scrollview\CCTableView.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\runtime\CCLoaderLayer.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\spine\CCSkeleton.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\spine\CCSkeletonAnimation.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\spine\CCSkeletonCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\spine\CCSkeletonWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\extensions\spine\Spine.js" />
+    <Content Include="frameworks\cocos2d-html5\external\box2d\box2d.js" />
+    <Content Include="frameworks\cocos2d-html5\external\chipmunk\chipmunk.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\GAFBoot.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\GAFMacros.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\gaf_viewer.css" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\gaf_viewer.html" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\gaf_viewer.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\Library\GAFAsset.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\Library\GAFAssetPreload.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\Library\GAFAtlasLoader.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\Library\GAFDataReader.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\Library\GAFLoader.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\Library\GAFMask.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\Library\GAFMaskProto.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\Library\GAFObject.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\Library\GAFShaderManager.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\Library\GAFShaders.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\Library\GAFSprite.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\Library\GAFSpriteCanvasRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\Library\GAFSpriteProto.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\Library\GAFSpriteWebGLRenderCmd.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\Library\GAFTags.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\Library\GAFTextField.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\Library\GAFTimeLine.js" />
+    <Content Include="frameworks\cocos2d-html5\external\gaf\Library\GAFTimeLineProto.js" />
+    <Content Include="frameworks\cocos2d-html5\external\pluginx\platform\facebook.js" />
+    <Content Include="frameworks\cocos2d-html5\external\pluginx\platform\facebook_sdk.js" />
+    <Content Include="frameworks\cocos2d-html5\external\pluginx\Plugin.js" />
+    <Content Include="frameworks\cocos2d-html5\external\socketio\socket.io.js" />
+    <Content Include="frameworks\cocos2d-html5\external\socketio\socket.io.min.js" />
+    <Content Include="frameworks\cocos2d-html5\jsb_apis.js" />
+    <Content Include="frameworks\cocos2d-html5\licenses\LICENSE_cocos2d-html5.txt" />
+    <Content Include="frameworks\cocos2d-html5\licenses\LICENSE_cocos2d-x.txt" />
+    <Content Include="frameworks\cocos2d-html5\licenses\LICENSE_zlib.js.txt" />
+    <Content Include="frameworks\cocos2d-html5\template\index.html" />
+    <Content Include="frameworks\cocos2d-html5\template\main.js" />
+    <Content Include="frameworks\cocos2d-html5\template\res\favicon.ico" />
+    <Content Include="frameworks\cocos2d-html5\template\res\HD\CloseNormal.png" />
+    <Content Include="frameworks\cocos2d-html5\template\res\HD\CloseSelected.png" />
+    <Content Include="frameworks\cocos2d-html5\template\res\HD\HelloWorld.jpg" />
+    <Content Include="frameworks\cocos2d-html5\template\res\loading.js" />
+    <Content Include="frameworks\cocos2d-html5\template\res\Normal\CloseNormal.png" />
+    <Content Include="frameworks\cocos2d-html5\template\res\Normal\CloseSelected.png" />
+    <Content Include="frameworks\cocos2d-html5\template\res\Normal\HelloWorld.jpg" />
+    <Content Include="frameworks\cocos2d-html5\template\src\myApp.js" />
+    <Content Include="frameworks\cocos2d-html5\template\src\resource.js" />
+    <Content Include="frameworks\cocos2d-html5\tools\build.xml" />
+    <Content Include="frameworks\cocos2d-html5\tools\compiler\compiler.jar" />
+    <Content Include="frameworks\cocos2d-html5\tools\core4cc.js" />
+    <Content Include="frameworks\cocos2d-html5\tools\genBuildXml.js" />
+    <Content Include="frameworks\cocos2d-html5\tools\jsdoc_toolkit\build.xml" />
+    <Content Include="frameworks\cocos2d-html5\tools\publish.js" />
+    <Content Include="frameworks\cocos2d-html5\tools\readme for tools.txt" />
+    <Content Include="frameworks\cocos2d-html5\tools\template\build.xml" />
+    <Content Include="frameworks\cocos2d-html5\tools\XmlCheck.js" />
+    <Content Include="frameworks\runtime-src\Classes\AppDelegate.cpp" />
+    <Content Include="frameworks\runtime-src\Classes\AppDelegate.h" />
+    <Content Include="frameworks\runtime-src\Classes\ide-support\CodeIDESupport.h" />
+    <Content Include="frameworks\runtime-src\Classes\ide-support\RuntimeJsImpl.cpp" />
+    <Content Include="frameworks\runtime-src\Classes\ide-support\RuntimeJsImpl.h" />
+    <Content Include="frameworks\runtime-src\Classes\ide-support\SimpleConfigParser.cpp" />
+    <Content Include="frameworks\runtime-src\Classes\ide-support\SimpleConfigParser.h" />
+    <Content Include="frameworks\runtime-src\Classes\js_module_register.h" />
+    <Content Include="frameworks\runtime-src\proj.android\AndroidManifest.xml" />
+    <Content Include="frameworks\runtime-src\proj.android\build.xml" />
+    <Content Include="frameworks\runtime-src\proj.android\jni\Android.mk" />
+    <Content Include="frameworks\runtime-src\proj.android\jni\Application.mk" />
+    <Content Include="frameworks\runtime-src\proj.android\jni\hellojavascript\main.cpp" />
+    <Content Include="frameworks\runtime-src\proj.android\libs\android-async-http-1.4.8.jar" />
+    <Content Include="frameworks\runtime-src\proj.android\proguard-project.txt" />
+    <Content Include="frameworks\runtime-src\proj.android\res\drawable-hdpi\icon.png" />
+    <Content Include="frameworks\runtime-src\proj.android\res\drawable-ldpi\icon.png" />
+    <Content Include="frameworks\runtime-src\proj.android\res\drawable-mdpi\icon.png" />
+    <Content Include="frameworks\runtime-src\proj.android\res\values\strings.xml" />
+    <Content Include="frameworks\runtime-src\proj.android\src\com\chukong\cocosplay\client\CocosPlayClient.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\javascript\AppActivity.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxAccelerometer.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxActivity.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxBitmap.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxDownloader.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxEditBox.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxEditBoxHelper.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxGLSurfaceView.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxHandler.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxHelper.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxHttpURLConnection.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxJavascriptJavaBridge.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxLocalStorage.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxLuaJavaBridge.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxMusic.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxRenderer.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxSound.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxTextInputWraper.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxTypefaces.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxVideoHelper.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxVideoView.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxWebView.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\Cocos2dxWebViewHelper.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\GameControllerAdapter.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\GameControllerDelegate.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\GameControllerUtils.java" />
+    <Content Include="frameworks\runtime-src\proj.android\src\org\cocos2dx\lib\ResizeLayout.java" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\AppController.h" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Default%402x.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Default-568h%402x.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Default-667h%402x.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Default-736h%403x.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Default-Landscape~ipad.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Default.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Icon-100.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Icon-114.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Icon-120.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Icon-144.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Icon-152.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Icon-180.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Icon-29.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Icon-40.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Icon-50.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Icon-57.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Icon-58.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Icon-72.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Icon-76.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Icon-80.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Icon-87.png" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\RootViewController.h" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\ConsoleWindowController.h" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\service\ConsoleWindowController.h" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\service\openudid\OpenUDIDMac.h" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\service\PlayerEditBoxServiceMac.h" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\service\PlayerFileDialogServiceMac.h" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\service\PlayerMac.h" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\service\PlayerMenuServiceMac.h" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\service\PlayerMessageBoxServiceMac.h" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\service\PlayerTaskServiceMac.h" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\SimulatorApp.h" />
+    <Content Include="frameworks\runtime-src\proj.win32\game.rc" />
+    <Content Include="frameworks\runtime-src\proj.win32\HungryHero.sln" />
+    <Content Include="frameworks\runtime-src\proj.win32\HungryHero.vcxproj.user" />
+    <Content Include="frameworks\runtime-src\proj.win32\main.cpp" />
+    <Content Include="frameworks\runtime-src\proj.win32\main.h" />
+    <Content Include="frameworks\runtime-src\proj.win32\resource.h" />
+    <Content Include="frameworks\runtime-src\proj.win32\res\game.ico" />
+    <Content Include="frameworks\runtime-src\proj.win32\SimulatorWin.cpp" />
+    <Content Include="frameworks\runtime-src\proj.win32\SimulatorWin.h" />
+    <Content Include="index.html" />
+    <Content Include="main.js" />
+    <Content Include="res\graphics\bgWelcome.jpg" />
+    <Content Include="res\graphics\texture.png" />
+    <Content Include="res\HelloWorld.png" />
+    <Content Include="script\3d\jsb_cocos2d_3d.js" />
+    <Content Include="script\3d\jsb_cocos2d_3d_ext.js" />
+    <Content Include="script\ccui\jsb_ccui_create_apis.js" />
+    <Content Include="script\ccui\jsb_ccui_deprecated.js" />
+    <Content Include="script\ccui\jsb_ccui_property_apis.js" />
+    <Content Include="script\ccui\jsb_ccui_property_impls.js" />
+    <Content Include="script\ccui\jsb_cocos2d_ui.js" />
+    <Content Include="script\chipmunk\jsb_chipmunk.js" />
+    <Content Include="script\chipmunk\jsb_chipmunk_constants.js" />
+    <Content Include="script\debugger\actors\root.js" />
+    <Content Include="script\debugger\actors\script.js" />
+    <Content Include="script\debugger\core\promise.js" />
+    <Content Include="script\debugger\DevToolsUtils.js" />
+    <Content Include="script\debugger\main.js" />
+    <Content Include="script\debugger\transport.js" />
+    <Content Include="script\extension\jsb_cocos2d_extension.js" />
+    <Content Include="script\extension\jsb_ext_create_apis.js" />
+    <Content Include="script\extension\jsb_ext_property_apis.js" />
+    <Content Include="script\jsb.js" />
+    <Content Include="script\jsb_audioengine.js" />
+    <Content Include="script\jsb_boot.js" />
+    <Content Include="script\jsb_cocos2d.js" />
+    <Content Include="script\jsb_cocos2d_constants.js" />
+    <Content Include="script\jsb_cocosbuilder.js" />
+    <Content Include="script\jsb_common.js" />
+    <Content Include="script\jsb_create_apis.js" />
+    <Content Include="script\jsb_debugger.js" />
+    <Content Include="script\jsb_deprecated.js" />
+    <Content Include="script\jsb_loaders.js" />
+    <Content Include="script\jsb_opengl.js" />
+    <Content Include="script\jsb_opengl_constants.js" />
+    <Content Include="script\jsb_pool.js" />
+    <Content Include="script\jsb_prepare.js" />
+    <Content Include="script\jsb_property_apis.js" />
+    <Content Include="script\jsb_property_impls.js" />
+    <Content Include="script\jsb_spine.js" />
+    <Content Include="script\navmesh\jsb_navmesh.js" />
+    <Content Include="script\physics3d\jsb_physics3d.js" />
+    <Content Include="script\physicsSprite\jsb_physicsSprite.js" />
+    <Content Include="script\studio\jsb_cocos2d_studio.js" />
+    <Content Include="script\studio\jsb_studio_boot.js" />
+    <Content Include="script\studio\jsb_studio_create_apis.js" />
+    <Content Include="script\studio\jsb_studio_load.js" />
+    <Content Include="script\studio\jsb_studio_property_apis.js" />
+    <Content Include="script\studio\parsers\action-1.x.js" />
+    <Content Include="script\studio\parsers\action-2.x.js" />
+    <Content Include="script\studio\parsers\compatible.js" />
+    <Content Include="script\studio\parsers\scene-1.x.js" />
+    <Content Include="script\studio\parsers\timelineParser-1.x.js" />
+    <Content Include="script\studio\parsers\timelineParser-2.x.js" />
+    <Content Include="script\studio\parsers\uiParser-1.x.js" />
+    <Content Include="src\app.js" />
+    <Content Include="src\resource.js" />
+    <Content Include="src\Scene\MenuScene.js" />
+    <Content Include="tools\bindings-generator\backup\clang-llvm-3.3-pybinding\cindex.py" />
+    <Content Include="tools\bindings-generator\backup\clang-llvm-3.3-pybinding\enumerations.py" />
+    <Content Include="tools\bindings-generator\backup\clang-llvm-3.3-pybinding\__init__.py" />
+    <Content Include="tools\bindings-generator\clang\cindex.py" />
+    <Content Include="tools\bindings-generator\clang\enumerations.py" />
+    <Content Include="tools\bindings-generator\clang\__init__.py" />
+    <Content Include="tools\bindings-generator\generator.py" />
+    <Content Include="tools\bindings-generator\libclang\libclang.dll" />
+    <Content Include="tools\bindings-generator\libclang\VERSION.txt" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\function.h" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\ifunction.c" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\ifunction_overloaded.c" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\lambda.c" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\layout_foot.c" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\layout_foot.h" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\layout_head.c" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\layout_head.h" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\prelude.c" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\prelude.h" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\public_field.c" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\register.c" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\sfunction.c" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\sfunction_overloaded.c" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\constructor.c" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\ctor.c" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\function.h" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\ifunction.c" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\ifunction_overloaded.c" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\lambda.c" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\layout_foot.c" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\layout_foot.h" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\layout_head.c" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\layout_head.h" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\prelude.c" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\prelude.h" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\public_field.c" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\register.c" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\sfunction.c" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\sfunction_overloaded.c" />
+    <Content Include="tools\bindings-generator\test\simple_test\simple_class.cpp" />
+    <Content Include="tools\bindings-generator\test\simple_test\simple_class.h" />
+    <Content Include="tools\bindings-generator\tools\win32\cygiconv-2.dll" />
+    <Content Include="tools\bindings-generator\tools\win32\cygintl-8.dll" />
+    <Content Include="tools\bindings-generator\tools\win32\cygwin1.dll" />
+    <Content Include="tools\bindings-generator\tools\win32\dos2unix.exe" />
+    <Content Include="tools\tojs\genbindings.py" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".cocos-project.json" />
+    <Content Include=".project" />
+    <Content Include=".settings\version.json" />
+    <Content Include="cocosstudio\MainScene.csd" />
+    <Content Include="config.json" />
+    <Content Include="frameworks\cocos2d-html5\.gitignore" />
+    <Content Include="frameworks\cocos2d-html5\bower.json" />
+    <Content Include="frameworks\cocos2d-html5\moduleConfig.json" />
+    <Content Include="frameworks\cocos2d-html5\README.mdown" />
+    <Content Include="frameworks\cocos2d-html5\template\project.json" />
+    <Content Include="frameworks\runtime-src\Classes\ide-support\lang" />
+    <Content Include="frameworks\runtime-src\proj.android\.classpath" />
+    <Content Include="frameworks\runtime-src\proj.android\.project" />
+    <Content Include="frameworks\runtime-src\proj.android\.settings\org.eclipse.jdt.core.prefs" />
+    <Content Include="frameworks\runtime-src\proj.android\ant.properties" />
+    <Content Include="frameworks\runtime-src\proj.android\build-cfg.json" />
+    <Content Include="frameworks\runtime-src\proj.android\project.properties" />
+    <Content Include="frameworks\runtime-src\proj.android\README.md" />
+    <Content Include="frameworks\runtime-src\proj.android\src\com\enhance\gameservice\IGameTuningService.aidl" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\HungryHero.xcodeproj\project.pbxproj" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\AppController.mm" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\build-cfg.json" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Info.plist" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\main.m" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\Prefix.pch" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\ios\RootViewController.mm" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\Base.lproj\ConsoleWindow.xib" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\Base.lproj\MainMenu.xib" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\build-cfg.json" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\ConsoleWindowController.m" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\en.lproj\MainMenu.xib" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\Icon.icns" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\Info.plist" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\main.m" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\Prefix.pch" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\service\ConsoleWindow.xib" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\service\ConsoleWindowController.m" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\service\DeviceEx-mac.mm" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\service\openudid\OpenUDIDMac.m" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\service\PlayerEditBoxServiceMac.mm" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\service\PlayerFileDialogServiceMac.mm" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\service\PlayerMac.mm" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\service\PlayerMenuServiceMac.mm" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\service\PlayerMessageBoxServiceMac.mm" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\service\PlayerTaskServiceMac.mm" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\SimulatorApp.mm" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\zh-Hans.lproj\ConsoleWindow.strings" />
+    <Content Include="frameworks\runtime-src\proj.ios_mac\mac\zh-Hans.lproj\MainMenu.xib" />
+    <Content Include="frameworks\runtime-src\proj.win32\build-cfg.json" />
+    <Content Include="frameworks\runtime-src\proj.win32\cocos2dx.props" />
+    <Content Include="frameworks\runtime-src\proj.win32\HungryHero.vcxproj" />
+    <Content Include="frameworks\runtime-src\proj.win32\HungryHero.vcxproj.filters" />
+    <Content Include="HungryHero.ccs" />
+    <Content Include="HungryHero.cfg" />
+    <Content Include="HungryHero.udf" />
+    <Content Include="manifest.webapp" />
+    <Content Include="project.json" />
+    <Content Include="res\MainScene.json" />
+    <Content Include="tools\bindings-generator\AUTHORS" />
+    <Content Include="tools\bindings-generator\generator" />
+    <Content Include="tools\bindings-generator\libclang\libclang.dylib" />
+    <Content Include="tools\bindings-generator\libclang\libclang.so" />
+    <Content Include="tools\bindings-generator\README.md" />
+    <Content Include="tools\bindings-generator\targets\lua\conversions.yaml" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\apidoc_classfoot.script" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\apidoc_classhead.script" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\apidoc_function.script" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\apidoc_function_foot.script" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\apidoc_function_head.script" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\apidoc_function_overload.script" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\apidoc_ns.script" />
+    <Content Include="tools\bindings-generator\targets\lua\templates\apidoc_ns_foot.script" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\conversions.yaml" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\apidoc_classfoot.script" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\apidoc_classhead.script" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\apidoc_function.script" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\apidoc_function_overload.script" />
+    <Content Include="tools\bindings-generator\targets\spidermonkey\templates\apidoc_ns.script" />
+    <Content Include="tools\bindings-generator\test\test.bat" />
+    <Content Include="tools\bindings-generator\test\test.ini" />
+    <Content Include="tools\bindings-generator\test\test.sh" />
+    <Content Include="tools\bindings-generator\test\user.cfg.sample" />
+    <Content Include="tools\bindings-generator\test\userconf.ini.sample" />
+    <Content Include="tools\tojs\cocos2dx.ini" />
+    <Content Include="tools\tojs\cocos2dx_3d.ini" />
+    <Content Include="tools\tojs\cocos2dx_3d_ext.ini" />
+    <Content Include="tools\tojs\cocos2dx_audioengine.ini" />
+    <Content Include="tools\tojs\cocos2dx_builder.ini" />
+    <Content Include="tools\tojs\cocos2dx_experimental_video.ini" />
+    <Content Include="tools\tojs\cocos2dx_experimental_webView.ini" />
+    <Content Include="tools\tojs\cocos2dx_extension.ini" />
+    <Content Include="tools\tojs\cocos2dx_navmesh.ini" />
+    <Content Include="tools\tojs\cocos2dx_physics3d.ini" />
+    <Content Include="tools\tojs\cocos2dx_spine.ini" />
+    <Content Include="tools\tojs\cocos2dx_studio.ini" />
+    <Content Include="tools\tojs\cocos2dx_ui.ini" />
+    <Content Include="tools\tojs\README.mdown" />
+    <Content Include="res\graphics\texture.plist" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\Element\" />
+    <Folder Include="src\Logic\" />
+    <Folder Include="src\UI\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:21838/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
