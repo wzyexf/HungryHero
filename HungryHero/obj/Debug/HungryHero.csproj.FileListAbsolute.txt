@@ -1,0 +1,5 @@
+F:\OneDrive\work\github\HungryHero\HungryHero\bin\HungryHero.dll
+F:\OneDrive\work\github\HungryHero\HungryHero\bin\HungryHero.pdb
+F:\OneDrive\work\github\HungryHero\HungryHero\obj\Debug\HungryHero.csprojResolveAssemblyReference.cache
+F:\OneDrive\work\github\HungryHero\HungryHero\obj\Debug\HungryHero.dll
+F:\OneDrive\work\github\HungryHero\HungryHero\obj\Debug\HungryHero.pdb
