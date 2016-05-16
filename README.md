@@ -9,3 +9,14 @@ Hungry hero 功能描述：
 游戏关于场景：关于文字元素、返回按钮元素
 ##2.游戏规则：
 略
+#代码实现
+##游戏菜单场景
+###关联知识点
+文字
+var item1 = new cc.MenuItemFont("actionScence", this.actionScence, this);
+图片
+ this._aboutBtn = new cc.MenuItemImage("#welcome_aboutButton.png", "#welcome_aboutButton.png", this._about, this);
+精灵
+new cc.MenuItemSprite(sprite, null, null)	
+切换
+MenuItemToggle
