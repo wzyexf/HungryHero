@@ -15,6 +15,7 @@
         "src/resource.js",
         "src/app.js",
       "src/Scene/MenuScene.js",
+      "src/Scene/AboutScene.js",
       "src/UI/SoundButton.js"
     ]
 }

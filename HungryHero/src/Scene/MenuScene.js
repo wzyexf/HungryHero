@@ -1,9 +1,11 @@
 ﻿var MenuScene = cc.Scene.extend({
     _playBtn:null,
-    _aboutBtn:null,
+    _aboutBtn: null,
+    _hero:null,
     ctor: function () {
 
         this._super();
+        this.scheduleUpdate();
         var layer = new cc.Layer();
         this.addChild(layer);
 
@@ -20,10 +22,13 @@
         title.y = 500;
         layer.addChild(title);
 
-        var hero = new cc.Sprite("#welcome_hero.png");
-        hero.x = 300;
-        hero.y = 400;
-        layer.addChild(hero);
+        this._hero = new cc.Sprite("#welcome_hero.png");
+        this._hero.x = -300;
+        this._hero.y = 400;
+        layer.addChild(this._hero);
+
+        var move = cc.moveTo(2, cc.p(this._hero.width / 2 + 100, this._hero.y)).easing(cc.easeOut(2));
+        this._hero.runAction(move);
 
 
         this._playBtn = new cc.MenuItemImage("#welcome_playButton.png", "#welcome_playButton.png", this._play);
@@ -63,9 +68,15 @@
 
     },
     _about: function () {
-
+        cc.director.runScene(new AboutScene());
     }
-
+    ,
+    update: function () {
+        var currentDate = new Date();
+        this._hero.y = 400 + (Math.cos(currentDate.getTime() * 0.002)) * 25;
+        this._playBtn.y = 350 + (Math.cos(currentDate.getTime() * 0.002)) * 10;
+        this._aboutBtn.y = 250 + (Math.cos(currentDate.getTime() * 0.002)) * 10;
+    }
 
 
 

@@ -568,6 +568,7 @@
     <Content Include="script\studio\parsers\uiParser-1.x.js" />
     <Content Include="src\app.js" />
     <Content Include="src\resource.js" />
+    <Content Include="src\Scene\AboutScene.js" />
     <Content Include="src\Scene\MenuScene.js" />
     <Content Include="src\UI\SoundButton.js" />
     <Content Include="tools\bindings-generator\backup\clang-llvm-3.3-pybinding\cindex.py" />
