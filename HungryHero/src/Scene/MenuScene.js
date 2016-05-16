@@ -1,4 +1,6 @@
 ﻿var MenuScene = cc.Scene.extend({
+    _playBtn:null,
+    _aboutBtn:null,
     ctor: function () {
 
         this._super();
@@ -22,6 +24,46 @@
         hero.x = 300;
         hero.y = 400;
         layer.addChild(hero);
+
+
+        this._playBtn = new cc.MenuItemImage("#welcome_playButton.png", "#welcome_playButton.png", this._play);
+        this._playBtn.x = 700;
+        this._playBtn.y = 350;
+        this._aboutBtn = new cc.MenuItemImage("#welcome_aboutButton.png", "#welcome_aboutButton.png", this._about, this);
+        this._aboutBtn.x = 500;
+        this._aboutBtn.y = 250;
+
+       // this._playBtn = new cc.MenuItemImage(
+	   // 		"#welcome_playButton.png",
+	   // 		"#welcome_playButton.png",
+	   // 	      this._play 	
+       //       );
+       // this._playBtn.x = 700;
+       // this._playBtn.y = 350;
+       // //this.addChild(_playBtn);
+
+       // this._aboutBtn = new cc.MenuItemImage(
+       //        "#welcome_aboutButton.png",
+       //        "#welcome_aboutButton.png",
+       //       this._about
+       // );
+       // this._aboutBtn.x = 500;
+       // this._aboutBtn.y = 250;
+       //// this.addChild(_aboutBtn);
+        var soundButton = new SoundButton();
+        soundButton.x = 45;
+        soundButton.y = winSize.height - 45;
+        var menu = new cc.Menu(this._aboutBtn, this._playBtn, soundButton);
+        layer.addChild(menu);
+        menu.x = menu.y = 0;
+        
+        
+    },
+    _play: function () {
+
+    },
+    _about: function () {
+
     }
 
 

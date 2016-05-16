@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -568,6 +569,7 @@
     <Content Include="src\app.js" />
     <Content Include="src\resource.js" />
     <Content Include="src\Scene\MenuScene.js" />
+    <Content Include="src\UI\SoundButton.js" />
     <Content Include="tools\bindings-generator\backup\clang-llvm-3.3-pybinding\cindex.py" />
     <Content Include="tools\bindings-generator\backup\clang-llvm-3.3-pybinding\enumerations.py" />
     <Content Include="tools\bindings-generator\backup\clang-llvm-3.3-pybinding\__init__.py" />
@@ -728,7 +730,6 @@
   <ItemGroup>
     <Folder Include="src\Element\" />
     <Folder Include="src\Logic\" />
-    <Folder Include="src\UI\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

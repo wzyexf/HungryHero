@@ -1,6 +1,6 @@
 var res = {
     welcomeBG : "res/graphics/bgWelcome.jpg",
-    textureJpg: "res/graphics/texture.jpg",
+    textureJpg: "res/graphics/texture.png",
     texturePlist: "res/graphics/texture.plist",
 };
 
